@@ -1,0 +1,13 @@
+package cucumber.options;
+
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    features = "classpath:feature",     // ← Use forward slashes only
+    glue = {"stepDefinitions"},
+    plugin = {"pretty"}                     // Optional: for clean output
+)
+public class TestRunner {}

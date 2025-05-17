@@ -1,0 +1,10 @@
+Feature: Validating Place API's
+
+Scenario: Verify if place is being succesfully added using AddPlaceAPI
+  Given Add Place Playload
+  When User calls "AddPlaceAPI" with post http request
+  Then the API call is success with status code "200"
+  And the "Status" in response body is "OK"
+  And verify the "scope" in response body is "APP" 
+
+

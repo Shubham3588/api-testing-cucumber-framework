@@ -1,0 +1,28 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class placeValidationsSteps {
+	  @Given("Add Place Payload")
+	    public void add_place_payload() {
+	        // implementation
+	    }
+
+	    @When("User calls {string} with {string} http request")
+	    public void user_calls_with_http_request(String api, String method) {
+	        // implementation
+	    }
+
+	    @Then("The API call is successful with status code {int}")
+	    public void api_call_success_status_code(int statusCode) {
+	        // implementation
+	    }
+
+	    @Then("{string} in response body is {string}")
+	    public void field_in_response_is(String field, String value) {
+	        // implementation
+	    }
+
+}

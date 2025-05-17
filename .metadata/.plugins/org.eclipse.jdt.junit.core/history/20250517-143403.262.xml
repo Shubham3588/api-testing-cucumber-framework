@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="APICucumberFramework" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="0.142">
+    <testsuite name="Sample feature" time="0.142">
+      <testcase name="Sample scenario" classname="Sample feature" time="0.142">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I have a working Cucumber setup' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("I have a working Cucumber setup")
+public void i_have_a_working_cucumber_setup() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,4 @@
+Feature: Sample feature
+
+  Scenario: Sample scenario
+    Given I have a working Cucumber setup

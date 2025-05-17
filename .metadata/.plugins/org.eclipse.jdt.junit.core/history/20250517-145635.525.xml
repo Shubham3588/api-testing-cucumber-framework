@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="APICucumberFramework" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="0.152">
+    <testsuite name="Validating Place API's" time="0.152">
+      <testcase name="Verify if place is being succesfully added using AddPlaceAPI" classname="Validating Place API's" time="0.151">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Add Place Playload' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Add Place Playload")
+public void add_place_playload() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User calls {string} with post http request")
+public void user_calls_with_post_http_request(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the API call is success with status code {int}")
+public void the_api_call_is_success_with_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
