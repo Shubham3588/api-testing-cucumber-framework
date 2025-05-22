@@ -1,10 +1,10 @@
 package stepDefinitions;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import static io.restassured.RestAssured.*;
 import static org.junit.Assert.assertEquals;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,45 +19,23 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import pojo.getMaps;
 import pojo.location;
+import resources.TestDataBuild;
+import resources.utils;
 
-public class placeValidationsSteps {
+public class placeValidationsSteps extends utils{
 	RequestSpecification response;
 	ResponseSpecification resspec;
 	Response getResponse;
+	TestDataBuild tb = new TestDataBuild();
 
 	@Given("Add Place Playload")
-	public void add_place_playload() {
-		RestAssured.baseURI = "https://rahulshettyacademy.com/";
-		getMaps gm = new getMaps();
-		gm.setAccuracy(62);
-		gm.setAddreess("Kaverappa Layout");
-		gm.setLanguage("Hindi");
-		gm.setPhoneNumber("7070707070");
-		gm.setName("Ankit");
-		gm.setWebsite("www.facebook.com");
-		List<String> myList = new ArrayList<String>();
-		myList.add("Shoe Park");
-		myList.add("Shoe");
-		gm.setTypes(myList);
-		location loc = new location();
-		loc.setLat(-24.589);
-		loc.setLng(58.3654);
-		gm.setLocation(loc);
-
-		RequestSpecification req = new RequestSpecBuilder()
-			.setBaseUri("https://rahulshettyacademy.com")
-			.addQueryParam("key", "qaclick123")
-			.setContentType(ContentType.JSON).build();
-
-		resspec = new ResponseSpecBuilder()
-			.expectStatusCode(200)
-			.expectContentType(ContentType.JSON).build();
-
-		response = given().spec(req).body(gm);
+	public void add_place_playload() throws FileNotFoundException {
+		response = given().spec(requestSpecification()).body(tb.addPayload());
 	}
 
 	@When("User calls {string} with post http request")
 	public void user_calls_with_post_http_request(String apiName) {
+		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		getResponse = response.when()
 			.post("/maps/api/place/add/json")
 			.then().assertThat().spec(resspec)
