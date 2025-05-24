@@ -1,6 +1,6 @@
 package stepDefinitions;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import static io.restassured.RestAssured.*;
@@ -29,7 +29,7 @@ public class placeValidationsSteps extends utils{
 	TestDataBuild tb = new TestDataBuild();
 
 	@Given("Add Place Playload")
-	public void add_place_playload() throws FileNotFoundException {
+	public void add_place_playload() throws IOException {
 		response = given().spec(requestSpecification()).body(tb.addPayload());
 	}
 
