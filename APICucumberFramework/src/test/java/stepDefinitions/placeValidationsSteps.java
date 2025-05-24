@@ -27,10 +27,10 @@ public class placeValidationsSteps extends utils{
 	ResponseSpecification resspec;
 	Response getResponse;
 	TestDataBuild tb = new TestDataBuild();
-
-	@Given("Add Place Playload")
-	public void add_place_playload() throws IOException {
-		response = given().spec(requestSpecification()).body(tb.addPayload());
+	
+	@Given("Add Place Playload {string} {string} {string}")
+	public void add_place_playload(String name, String language, String address) throws IOException {
+		response = given().spec(requestSpecification()).body(tb.addPayload(name, language, address));
 	}
 
 	@When("User calls {string} with post http request")

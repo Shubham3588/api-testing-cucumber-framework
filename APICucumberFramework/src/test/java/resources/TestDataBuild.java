@@ -7,13 +7,13 @@ import pojo.getMaps;
 import pojo.location;
 
 public class TestDataBuild {
-	public getMaps addPayload() {
+	public getMaps addPayload(String name,String language,String address) {
 		getMaps gm = new getMaps();
 		gm.setAccuracy(62);
-		gm.setAddreess("Kaverappa Layout");
-		gm.setLanguage("Hindi");
+		gm.setAddreess(address);
+		gm.setLanguage(language);
 		gm.setPhoneNumber("7070707070");
-		gm.setName("Ankit");
+		gm.setName(name);
 		gm.setWebsite("www.facebook.com");
 		List<String> myList = new ArrayList<String>();
 		myList.add("Shoe Park");

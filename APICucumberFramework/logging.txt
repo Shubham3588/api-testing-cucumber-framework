@@ -16,18 +16,18 @@ Body:
         "lng": 58.3654
     },
     "accuracy": 62,
-    "name": "Ankit",
+    "name": "AaHouse",
     "phoneNumber": "7070707070",
-    "addreess": "Kaverappa Layout",
+    "addreess": "1st Cross Road",
     "types": [
         "Shoe Park",
         "Shoe"
     ],
     "website": "www.facebook.com",
-    "language": "Hindi"
+    "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Sat, 24 May 2025 08:38:03 GMT
+Date: Sat, 24 May 2025 09:00:43 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,102 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "6c04deb1daababf0bc2031f2d3308251",
+    "place_id": "dbee875e9eaacad476de019ec3aed457",
     "scope": "APP",
-    "reference": "32e9a65d42996bed4fa96292d56f0dc632e9a65d42996bed4fa96292d56f0dc6",
-    "id": "32e9a65d42996bed4fa96292d56f0dc6"
+    "reference": "e6745ca34cd15c9f0bd2dfa5b69a9afbe6745ca34cd15c9f0bd2dfa5b69a9afb",
+    "id": "e6745ca34cd15c9f0bd2dfa5b69a9afb"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -24.589,
+        "lng": 58.3654
+    },
+    "accuracy": 62,
+    "name": "BBHouse",
+    "phoneNumber": "7070707070",
+    "addreess": "2nd Cross Road",
+    "types": [
+        "Shoe Park",
+        "Shoe"
+    ],
+    "website": "www.facebook.com",
+    "language": "Hindi"
+}
+HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 09:00:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "c9220a189060c33c535b2a1d18f5add0",
+    "scope": "APP",
+    "reference": "b8c1c5af596b9b7464d8d25b4372c34cb8c1c5af596b9b7464d8d25b4372c34c",
+    "id": "b8c1c5af596b9b7464d8d25b4372c34c"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -24.589,
+        "lng": 58.3654
+    },
+    "accuracy": 62,
+    "name": "CcHouse",
+    "phoneNumber": "7070707070",
+    "addreess": "3rd Cross Road",
+    "types": [
+        "Shoe Park",
+        "Shoe"
+    ],
+    "website": "www.facebook.com",
+    "language": "French"
+}
+HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 09:00:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "531e1e64cb33308a6d16d148d454c980",
+    "scope": "APP",
+    "reference": "454f7405a24d7665336d9606b3d3248d454f7405a24d7665336d9606b3d3248d",
+    "id": "454f7405a24d7665336d9606b3d3248d"
 }
